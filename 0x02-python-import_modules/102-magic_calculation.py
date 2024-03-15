@@ -1,12 +1,14 @@
 #!/usr/bin/python3
-def add(a, b):
-    """My addition function
 
-    Args:
-        a: first integer
-        b: second integer
+def magic_calculation(a, b):
+    """Match bytecode provided by Holberton School."""
+    from magic_calculation_102 import add, sub
 
-    Returns:
-        The return value. a + b
-    """
-    return (a + b)
+    if a < b:
+        c = add(a, b)
+        for i in range(4, 6):
+            c = add(c, i)
+        return (c)
+
+    else:
+        return(sub(a, b))
